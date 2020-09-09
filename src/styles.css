@@ -54,6 +54,9 @@ body {
 li {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 .menu-hamburguer {
   cursor: pointer;
   pointer-events: all;
@@ -109,6 +112,8 @@ li {
     height: 35%;
     justify-content: space-between;
     font-size: 18px; }
+    .menu-drawer > .nav-bar > .nav-item > a {
+      color: #000; }
 
 .user-menu {
   width: 50%;

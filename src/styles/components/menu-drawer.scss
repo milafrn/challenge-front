@@ -31,5 +31,9 @@
     height: 35%;
     justify-content: space-between;
     font-size: 18px;
+
+    & > .nav-item > a {
+      color: #000;
+    }
   }
 }
