@@ -9,6 +9,6 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "build-sass": "node-sass src/styles.scss src/styles.css"
+    "start-sass": "node-sass --watch src/styles.scss src/styles.css"
   }
 }
