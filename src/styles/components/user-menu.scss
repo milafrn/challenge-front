@@ -1,0 +1,13 @@
+.user-menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  z-index: -1;
+  
+  & > .item > .icon {
+    width: 40px;
+  }
+}
