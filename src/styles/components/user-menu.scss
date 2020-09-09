@@ -5,9 +5,12 @@
   position: absolute;
   right: 5%;
   top: 2%;
-  z-index: -1;
 
-  & > .item > .icon {
-    width: 35px;
+  & > .item {
+    cursor: pointer;
+
+    & > .icon {
+      width: 35px;
+    }
   }
 }
