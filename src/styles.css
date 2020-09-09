@@ -107,10 +107,8 @@ li {
     display: flex;
     flex-direction: column;
     height: 35%;
-    justify-content: space-between; }
-
-.nav-bar {
-  font-size: 22px; }
+    justify-content: space-between;
+    font-size: 18px; }
 
 .user-menu {
   width: 50%;
