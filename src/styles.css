@@ -127,3 +127,38 @@ a {
     cursor: pointer; }
     .user-menu > .item > .icon {
       width: 35px; }
+
+.modal-cart {
+  background-color: #f0f0f0;
+  width: 330px;
+  height: 460px;
+  position: absolute;
+  right: 4.5%;
+  top: 70px;
+  box-shadow: -5px 0px 5px #eeeeee;
+  display: grid;
+  grid-template-rows: auto 60px; }
+  .modal-cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    right: 2%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent transparent #eeeeee;
+    border-image: initial;
+    border-width: 18px;
+    pointer-events: none; }
+  .modal-cart > .buy-button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    background-color: #00bc0e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase; }
