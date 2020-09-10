@@ -137,7 +137,12 @@ a {
   top: 70px;
   box-shadow: -2px 0px 8px #d6d5d5;
   display: grid;
-  grid-template-rows: auto 60px 60px; }
+  grid-template-rows: auto 60px 60px;
+  opacity: 0;
+  transition: opacity 250ms linear; }
+  .modal-cart.-active {
+    opacity: 1;
+    transition: opacity 250ms linear; }
   .modal-cart::before {
     content: "";
     display: block;

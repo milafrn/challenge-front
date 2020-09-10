@@ -8,6 +8,13 @@
   box-shadow: -2px 0px 8px #d6d5d5;
   display: grid;
   grid-template-rows: auto 60px 60px;
+  opacity: 0;
+  transition: opacity 250ms linear;
+
+  &.-active {
+    opacity: 1;
+    transition: opacity 250ms linear;
+  }
 
   &::before {
     content: "";
@@ -63,16 +70,16 @@
           }
         }
 
-        & > .product-amount{
+        & > .product-amount {
           display: inline-block;
           margin-right: 40px;
           font-weight: 500;
           font-size: 15px;
         }
 
-        & > .product-price{
+        & > .product-price {
           display: inline-block;
-          color:  #00bc0e;
+          color: #00bc0e;
           font-weight: bold;
           font-size: 14px;
         }
