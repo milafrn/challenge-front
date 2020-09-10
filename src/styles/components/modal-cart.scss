@@ -1,7 +1,7 @@
 .modal-cart {
   background-color: #f0f0f0;
   width: 330px;
-  height: 460px;
+  max-height: 460px;
   position: absolute;
   right: 4.5%;
   top: 70px;
@@ -37,6 +37,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    max-height: 440px;
+    overflow: scroll;
 
     & > .products-cart {
       width: 90%;
