@@ -116,3 +116,9 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 998px){
+  .modal-cart {
+    right: 0.5%;
+  }
+}

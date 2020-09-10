@@ -57,6 +57,14 @@ li {
 a {
   text-decoration: none; }
 
+@media (min-width: 998px) {
+  .header-eplus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 5px 5px #eeeeee; } }
+
 .menu-hamburguer {
   cursor: pointer;
   pointer-events: all;
@@ -112,12 +120,35 @@ a {
     flex-direction: column;
     height: 35%;
     justify-content: space-between;
-    font-size: 18px; }
+    font-size: 16px; }
     .menu-drawer > .nav-bar > .nav-item > a {
       color: #000; }
 
+@media (min-width: 998px) {
+  .menu-hamburguer {
+    display: none; }
+  .menu-drawer {
+    background-color: #fff;
+    transform: translate(0);
+    width: 80%;
+    height: 10%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    align-items: center; }
+    .menu-drawer > .logo-eplus {
+      margin-right: 20px;
+      margin-bottom: 0;
+      width: 200px; }
+    .menu-drawer > .nav-bar {
+      display: inline-block; }
+      .menu-drawer > .nav-bar > .nav-item {
+        display: inline-block; } }
+
 .user-menu {
   width: 50%;
+  max-width: 200px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -127,6 +158,12 @@ a {
     cursor: pointer; }
     .user-menu > .item > .icon {
       width: 35px; }
+
+@media (min-width: 998px) {
+  .user-menu {
+    position: static; }
+    .user-menu > .item {
+      display: inline-block; } }
 
 .modal-cart {
   background-color: #f0f0f0;
@@ -221,3 +258,7 @@ a {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase; }
+
+@media (min-width: 998px) {
+  .modal-cart {
+    right: 0.5%; } }

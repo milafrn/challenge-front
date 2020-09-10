@@ -1,5 +1,6 @@
 .user-menu {
   width: 50%;
+  max-width: 200px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -11,6 +12,24 @@
 
     & > .icon {
       width: 35px;
+    }
+  }
+}
+
+@media (min-width: 998px){
+  .user-menu {
+    position: static;
+    & > .item {
+      display: inline-block;
+    }
+  }
+}
+
+
+@media (min-width: 1280px){
+  .user-menu {
+    & > .item {
+
     }
   }
 }
