@@ -1,38 +1,27 @@
-![Eplus](https://www.agenciaeplus.com.br/wp-content/themes/eplus/images/agencia-eplus-n-logo.png)
+# Como executar o projeto
 
-# E-Plus Frontend Challenge
+- Execute o comando `yarn install` para instalar as dependencias do projeto
+- Execute o comando `yarn http-server` para iniciar um servidor http localhost
+- Insira o `ip` que foi retornado em seu terminal logo após ter executado o `http-server` e cole no seu navegador
 
-Seja bem-vindo ao E-Plus Front-end Challenge, considere este o primeiro passo para fazer parte de uma das melhores equipes de ecommerce e marketing digital do Brasil!
+- Para executar o Sass basta executar o comando no terminal `start-sass`.
 
-Para completar o desafio com sucesso você precisará codificar o layout que segue no projeto, para isso será necessário consumir um json via xhttp que retornará uma lista de produtos na resposta do request e servirá para alimentar/manipular o mini-cart.
+## O que foi utilizado neste projeto.
 
-Então mãos a obra e bom challenge ;)
+- HTML
+- Sass
+- Javascript
+- Gerenciador de pacotes yarn
 
-## Design
+## Como foi o processo de construção do projeto
 
-- O topo apresentado deve seguir o [seguinte design](https://projects.invisionapp.com/share/NARHXUS6HCF#/357617423_Eplus)
-- Baseado neste layout, faça uma adaptação responsiva para celulares.
+```
+Primeiro eu instalei o yarn e fiz as configurações iniciais de dependencias e estrutura do projeto. 
+Depois eu montei o HTML e fui estilizando a partir de mobile first fiz primeiro a parte do menu-drawer por que eu achei que seria mais facil. 
+Logo após montei o javascript para as interações do menu drawer. 
+Depois voltei a adicionar os componentes de HTML e estilizar a parte que faltava que deixei por ultimo em questão de adição de componentes (o modal do carrinho).
+Logo depois de montado todo o HTML com a estilização eu passei pro javascript para montar cada item de forma dinamica consumindo a API fornecida. E Finalmente
+por último de tudo comecei a fazer a responsividade para desktop.
+```
 
-## Como realizar o teste
-
-- Faça um fork deste repositório em seu GitHub
-- Adicione ao Readme uma descrição de como executar seu projeto
-- Descreva as funcionalidades do seu desafio, nos conte tudo que fez! Se fez o desafio utilizando pré-processadores, por exemplo, pois usaremos estas informações para avaliá-lo. 
-- O ideal é que este challenge leve até 8h.
-- Faça commits parciais, para que possamos acompanhar o seu desenvolvimento.
-- Em caso de dúvidas, entre em contato com nadia@agenciaeplus.com.br
-
-## Dicas
-
-- Os ícones usados, são todos do Material Design. https://material.io/icons/
-- A fonte utilizada é Montserrat (Está fonte se encontra no google fonts). 
-- Trabalhamos com clientes perfeccionistas, portanto tenha atenção com espaçamentos, tamanhos e estilos de fonte. 
-
-## Critérios de avaliação
-
-- Alcançar os objetivos propostos
-- Qualidade de código
-- Commits parciais, mostrando a linha de desenvolvimento
-- Boa descrição das funcionalidades do desafio
-- Fidelidade ao design proposto
-- Adaptação mobile
+> Obs: daria para deixar o código melhor com uma refatoração porém prezei pela entrega com as funcionalidades do projeto dentro do prazo de 8 horas. Não tinha a minima ideia se ia conseguir ou não. Tentei dar o meu melhor ;)!.
