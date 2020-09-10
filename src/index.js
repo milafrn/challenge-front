@@ -1,4 +1,5 @@
 const $wrapperProducts = document.querySelector('.wrapper-products');
+const $totalAmount = document.querySelector('.total-amount');
 
 let xhr = new XMLHttpRequest;
 let url = './products.json';
@@ -50,6 +51,20 @@ const createProduct = (bestPriceFormated, image, name, quantity) => {
   createTextWrapper.insertAdjacentElement('beforeend', createProductPrice);
 }
 
+
+
 json.cart.item.forEach(product => {
   createProduct(product.bestPriceFormated, product.image, product.name, product.quantity);
 });
+
+const calculatePriceTotal = (price) => {
+  let priceConvert = price / 100
+  $totalAmount.innerHTML = `R$ ${priceConvert.toLocaleString('pt-BR')}`;
+}
+
+let count = 0;
+for(item of json.cart.item){
+  count += item.bestPrice;
+} 
+
+calculatePriceTotal(count)
