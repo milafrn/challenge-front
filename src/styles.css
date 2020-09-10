@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,9 +135,9 @@ a {
   position: absolute;
   right: 4.5%;
   top: 70px;
-  box-shadow: -5px 0px 5px #eeeeee;
+  box-shadow: -2px 0px 8px #d6d5d5;
   display: grid;
-  grid-template-rows: auto 60px; }
+  grid-template-rows: auto 60px 60px; }
   .modal-cart::before {
     content: "";
     display: block;
@@ -151,6 +151,57 @@ a {
     border-image: initial;
     border-width: 18px;
     pointer-events: none; }
+  .modal-cart > .wrapper-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; }
+    .modal-cart > .wrapper-products > .products-cart {
+      width: 90%;
+      border-bottom: 1px solid #e8e8e8;
+      display: flex;
+      padding-bottom: 20px; }
+      .modal-cart > .wrapper-products > .products-cart > .product-image {
+        width: 90px;
+        height: 80px;
+        margin-right: 10px;
+        border-radius: 1px; }
+      .modal-cart > .wrapper-products > .products-cart > .text-wrapper {
+        width: 100%; }
+        .modal-cart > .wrapper-products > .products-cart > .text-wrapper > .product-description {
+          font-size: 14px;
+          width: 200px;
+          height: 29px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          margin-bottom: 20px;
+          position: relative; }
+          .modal-cart > .wrapper-products > .products-cart > .text-wrapper > .product-description::after {
+            content: "...";
+            position: absolute;
+            top: 1em; }
+        .modal-cart > .wrapper-products > .products-cart > .text-wrapper > .product-amount {
+          display: inline-block;
+          margin-right: 40px;
+          font-weight: 500;
+          font-size: 15px; }
+        .modal-cart > .wrapper-products > .products-cart > .text-wrapper > .product-price {
+          display: inline-block;
+          color: #00bc0e;
+          font-weight: bold;
+          font-size: 14px; }
+  .modal-cart > .total-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6; }
+    .modal-cart > .total-order > .total-amount {
+      color: #555555;
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 0.4em; }
   .modal-cart > .buy-button {
     width: 100%;
     height: 60px;
